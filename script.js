@@ -54,6 +54,7 @@ function openform() {
     document.getElementById("container__popup").style.display = "flex";
     document.getElementById("title").value = " ";
     document.getElementById("discription").value = " ";
+    element.innerHTML = "create";
 
 }
 
