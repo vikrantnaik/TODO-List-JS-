@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do</title>
+</head>
+<link rel="stylesheet" href="index.css" />
+
+<body>
+    <h1>High Level Todo</h1>
+    <div class="container">
+        <div class="ongoing__todo">
+            <h1>Ongoing</h1>
+            <div onclick="opentask()" id="new__task"></div>
+            <button id="btn" onclick="openform()">+</button>
+        </div>
+        <div class="completed__todo">
+            <h1>Completed</h1>
+            <div onclick="opentask()" id="new__task1"></div>
+        </div>
+    </div>
+    <div id="container__popup">
+        <div id="popupform">
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title" /> 
+
+            <label for="discription">Discription</label> 
+            <textarea name="discription" id="discription" cols="80" rows="10"></textarea>
+            
+            <label for="discription">Status</label>
+
+            <select name="select" id="select" onchange="my_task()">
+                <option id="Ongoing" value="Ongoing">Ongoing</option>
+                <option id="Completed" value="Completed">Completed</option>
+            </select>
+    
+
+            <div>
+                <button onclick="closeform();" class="btn btn-" id="close">x</button>
+            </div>
+            <button class="create">Create</button>
+        </div>
+    </div>
+    <div id="new__task"></div>
+</body>
+<script src="/script.js"></script>
+
+</html>

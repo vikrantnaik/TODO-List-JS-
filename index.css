@@ -1,0 +1,130 @@
+
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+    h1 {
+      text-align: center;
+     }
+
+#btn{
+       width: 450px;
+       height: 80px;
+       background-color: beige;
+       outline: none;
+       border: none;
+       box-shadow: 1px 1px white;
+       font-size: 30px;
+}
+
+#container__popup{
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#popupform{
+    position: relative;
+   padding: 50px;
+   background:#ffffff;
+    width: 800px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(153, 151, 151);
+
+}
+
+#popupform label{
+    display: block;
+    font-size: 30px;
+}
+
+#title{
+    margin-bottom: 10px;
+    width: 450px;
+    height: 50px;
+ 
+}
+
+#popupform  input[type="text"] {
+
+    outline: none;
+    border: none;
+    box-shadow: 3px 3px rgb(168, 166, 166);
+    font-size: large;
+    width: 600px;
+}
+
+#select {
+    height: 50px;
+    width: 150px;
+    font-size: larger;
+    border-color: rgb(188, 200, 210);
+}
+
+.create{
+    margin-top: 20px;
+    height: 40px;
+    width: 200px;
+    border: 2px solid rgb(235, 235, 137);
+    border-radius: 2rem;
+}
+
+#close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    font-size: larger;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    background: transparent;
+}
+
+#tasks{
+    position: relative;
+    height: 70px;
+    box-shadow: 1px 1px rgb(168, 166, 166); ;
+    width: 450px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+#tasks p{
+    text-align: center;
+    padding-top: 15px;
+    font-size: larger;
+    font-weight: 100;
+    
+
+}
+
+.delete-task{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+     height: 20px;
+     cursor: pointer;
+
+}
